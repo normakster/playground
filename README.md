@@ -57,6 +57,10 @@ Copy the sample conf file in `conf` directory:
 
     $ cp conf/dev.config.py.sample conf/dev.config.py
 
+___IF___ you want a **Docker** Container, run:
+
+    $ docker-compose up --build
+
 You need to register client Apps in these websites:
 
 1. Google

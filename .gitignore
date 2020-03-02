@@ -27,3 +27,4 @@ node_modules/
 *.retry
 *.rdb
 .env
+db.sqlite

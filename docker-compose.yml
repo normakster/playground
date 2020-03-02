@@ -8,6 +8,7 @@ services:
       - "./:/app/"
     ports:
       - "5000:5000"
+    command: sh -c ./start.sh
     networks:
       - isolated
 networks:
