@@ -9,6 +9,10 @@ if is_dev:
     conf_file = os.path.abspath('conf/dev.config.py')
     app = create_app(conf_file)
 
+    @app.before_first_request
+    def initdb():
+        db.create_all()
+
     @app.after_request
     def add_header(resp):
         resp.headers['Cache-Control'] = 'no-store'

@@ -26,3 +26,4 @@ node_modules/
 /conf/dev.config.py
 *.retry
 *.rdb
+.env
