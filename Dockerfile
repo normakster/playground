@@ -26,5 +26,6 @@ RUN pip install -r /requirements.txt
 WORKDIR /app
 COPY ./start.sh ./start.sh
 RUN chmod +x start.sh
+RUN cp ./conf/dev.config.py.sample ./conf/dev.config.py
 
 CMD sh -c "export FLASK_APP=app.py && export FLASK_DEBUG=1 && flask run --host=0.0.0.0"
